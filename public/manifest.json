@@ -1,0 +1,38 @@
+{
+  "name": "AwesomeGames",
+  "start_url": "../src/index.html",
+  "display": "standalone",
+  "background_color": "#01011F",
+  "icons": [
+    {
+      "src": "./images/icons/facebook.svg",
+      "sizes": "10x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "./images/icons/instagram.svg",
+      "sizes": "14x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "./images/icons/twitter.svg",
+      "sizes": "16x16",
+      "type": "image/svg"
+    },
+    {
+      "src": "./images/icons/24h.png",
+      "sizes": "72x75",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/dice.png",
+      "sizes": "75x75",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icons/slot.png",
+      "sizes": "75x75",
+      "type": "image/png"
+    }
+  ]
+}

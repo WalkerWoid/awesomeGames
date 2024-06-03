@@ -1,0 +1,253 @@
+/*region Медиа для Хедера*/
+@media screen and (max-width: 1024px) {
+    .header__top .container {
+        gap: 20px;
+    }
+    .header__nav ul {
+        gap: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header__banner {
+        padding-bottom: 0;
+    }
+    header .logo {
+        order: 1;
+    }
+    .header__top {
+        padding-top: 15px;
+    }
+    .header__top .container {
+        flex-wrap: wrap;
+        gap: 0 10px;
+    }
+    .header__nav {
+        order: 3;
+        width: 100%;
+    }
+    .header__nav a {
+        padding: 20px 0;
+    }
+    .header__top .container .btns-container {
+        order: 2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header__top .container {
+        gap: 0;
+    }
+    .header__nav ul {
+        gap: 12px;
+    }
+    .header__nav a {
+        font-size: 15px;
+    }
+}
+/*endregion*/
+
+/*region Медиа для блока с формой регистрации*/
+@media screen and (max-width: 1024px) {
+    .registration-form label {
+        max-width: initial;
+        min-width: auto;
+        flex: 1 1 30%;
+    }
+    .registration-form label._short {
+        max-width: initial;
+    }
+    .registration-form h3 {
+        font-size: 18px;
+    }
+    .registration-form button {
+        height: 43px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .registration-form .form__row._info label {
+        flex: 1 1 auto;
+    }
+    .advantages {
+        gap: 10px;
+    }
+    .registration-form button {
+        flex: 1 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .header__banner h1 {
+        font-size: 24px;
+        line-height: 140%;
+    }
+    .header__banner h2 {
+        margin-top: 0;
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .header__banner .btns-container {
+        margin-top: 12px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .header__banner .btns-container .btn {
+        max-width: 100%;
+        flex: 1 1 40%;
+        min-width: 160px;
+    }
+    .registration-form {
+        margin-top: 20px;
+    }
+    .registration-form h3 {
+        text-align: center;
+        justify-content: center;
+    }
+    .advantages {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .advantages li {
+        flex: 1 1 40%;
+        justify-content: center;
+        min-width: max-content;
+    }
+}
+/*endregion*/
+
+/*region Медия для блока с играми*/
+@media screen and (max-width: 1024px) {
+    main .container:after {
+        left: auto;
+        right: 10px;
+    }
+    .games {
+        flex-wrap: wrap;
+    }
+    .games__container {
+        grid-template-columns: repeat(2, 1fr);
+        flex: 1 1 40%;
+        max-width: initial;
+    }
+    .game {
+        width: 100%;
+        max-width: initial;
+        min-width: 50%;
+        height: auto;
+    }
+    .games__container._big {
+        grid-template-columns: 1fr;
+    }
+    .game._full {
+        padding: 12px;
+        gap: 10px;
+    }
+    .game._full:nth-child(1) {
+        background-size: cover;
+    }
+    .game._full:nth-child(2) {
+        background-size: cover;
+    }
+    .game._full .game__description {
+        margin-top: 0;
+    }
+    .game._span2 {
+        grid-column: span 1;
+    }
+    .game._span2 picture {
+        flex: 1 auto;
+    }
+    .game .read-more {
+        position: initial;
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 768px) {
+    main {
+        padding-bottom: 400px;
+    }
+    main section:first-of-type {
+        margin-top: 40px;
+    }
+    main section {
+        margin-top: 40px;
+    }
+    .games__container {
+        grid-template-columns: repeat(2, 1fr);
+        flex: 1 1 100%;
+        max-width: initial;
+    }
+    .games__container._big {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: auto;
+    }
+    .game._full {
+        background-position: center
+    }
+    .game._span2 {
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width: 480px) {
+    .section__header {
+        font-size: 22px;
+        line-height: 140%;
+    }
+    .section__subtitle {
+        line-height: 140%;
+        font-size: 14px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .games {
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    .games__container._big {
+        grid-template-columns: 1fr;
+        grid-auto-rows: 200px;
+    }
+    .game._span2 {
+        grid-column: span 1;
+    }
+}
+/*endregion*/
+
+/*region Медия для формы комментария*/
+@media screen and (max-width: 1024px) {
+    .form__section {
+        margin-top: 40px;
+    }
+    .contact-form {
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact-form {
+        max-width: 100%;
+    }
+    .contact-form button[type=submit] {
+        flex: 1 1 auto;
+    }
+}
+/*endregion*/
+
+/*region Медиа для футера*/
+@media screen and (max-width: 480px) {
+    .footer__nav {
+        gap: 10px 20px;
+        flex-wrap: wrap;
+    }
+    .footer__nav a {
+        flex: 1 40%;
+    }
+    .footer__nav a:after {
+        content: '';
+    }
+    .footer__bottom {
+        justify-content: center;
+    }
+    .footer__bottom .rights {
+        width: 100%;
+        text-align: center;
+    }
+}
+/*endregion*/
